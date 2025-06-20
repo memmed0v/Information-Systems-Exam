@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Awesome Store</title>
+  <link rel="stylesheet" href="imtahan2.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">Awesome Store</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="products container" id="product-list">
+    </section>
+  </main>
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-cart">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <div class="total">
+        Total: $<span id="cart-total">0.00</span>
+      </div>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+  </div>
+
+<section class="register">
+    <h2>Register</h2>
+    <form id="registerForm">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="password" required>
+        <button type="submit">Register</button>
+    </form> 
+</section>
+
+
+<div id="userInfo"></div>
+
+  <script src="imtahan2.js"></script>
+</body>
+</html>
